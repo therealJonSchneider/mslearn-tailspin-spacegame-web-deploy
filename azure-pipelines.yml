@@ -99,7 +99,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'tailspin-space-game-webdev'
             inputs:
-              azureSubscription: 'Azure subscription 1'
+              azureSubscription: '4fc8d106-bb2a-4673-a1fc-8d24ebbaec24'
               appName: '$(tailspin-space-game-webdev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
 
@@ -124,6 +124,6 @@ stages:
           - task: AzureWebApp@1
             displayName: 'tailspin-space-game-webtest'
             inputs:
-              azureSubscription: 'Azure subscription 1'
+              azureSubscription: '4fc8d106-bb2a-4673-a1fc-8d24ebbaec24'
               appName: '$(tailspin-space-game-webtest)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
